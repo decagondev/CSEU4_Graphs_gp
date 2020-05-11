@@ -46,12 +46,6 @@ These traversals use the BFS and DFS algorithm respectively
 - *BFT* Looks at nodes `1` away then nodes `2` away then nodes `n` away such that `n` is the next level of children, grand-children etc
 - *DFT* looks at a `neighbor`, then the `neighbor's neighbor`, then the `neighbor's neighbor's neighbor` etc
 
-Lets do some pseudo-code:
-
-```python
-def bft(self, starting_vertex_id):
-    pass
-```
 
 ## Lets take a quick break
 After the break we can look at the concept of this traversal and run through the traversing process
@@ -100,6 +94,21 @@ Repeat until queue is empty:
 ```
 q = [2]
 visited = {1}
+```
+
+deque item, and repeat process:
+
+```
+q = []
+visited = {1, 2, 3, 4, 5, 6, 7}
+
+```
+
+## Lets do some pseudo-code:
+
+```python
+def bft(self, starting_vertex_id):
+    pass
 ```
 
 ## Lets code up that BFT
