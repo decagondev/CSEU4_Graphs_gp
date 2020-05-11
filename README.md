@@ -1,1 +1,127 @@
-# CSEU4_Graphs_gp
+# Graphs
+
+*Day 1*
+
+## 1. What is a graph and how is it represented?
+
+- What is a Graph?
+
+- Terminology
+    - Directed Vs Undirected
+        - A: 
+        - A: 
+    
+    - Cyclic Vs Acyclic
+    - Dense Vs Sparse
+    - Weighted Vs Unweighted
+
+- Adjacency Lists & Adjacency Matrices
+
+## Lets code an Adjacency List
+
+```python
+class Graph:
+    """Represent a graph as a dictionary of vertices mapping labels to edges."""
+    def __init__(self):
+        pass
+
+    def add_vertex(self, vertex_id):
+        pass
+
+    def add_edge(self, v1, v2):
+        pass
+
+    def get neighbors(self, vertex_id):
+        pass
+```
+
+
+
+
+## 2. Breadth First & Depth first Traversal
+These traversals use the BFS and DFS algorithm respectively
+
+- *BFT* Looks at nodes `1` away then nodes `2` away then nodes `n` away such that `n` is the next level of children, grand-children etc
+- *DFT* looks at a `neighbor`, then the `neighbor's neighbor`, then the `neighbor's neighbor's neighbor` etc
+
+Lets do some pseudo-code:
+
+```python
+def bft(self, starting_vertex_id):
+    pass
+```
+
+## Lets take a quick break
+After the break we can look at the concept of this traversal and run through the traversing process
+
+### 3. Partial Traversal example
+
+```
+q = []
+visited = {}
+```
+
+Enqueue first vertex:
+
+```
+q = [1]
+visited = {}
+```
+
+Dequeue first vertex:
+
+```
+q = []
+visited = {}
+
+1
+```
+
+Check if it's been visited (no):
+
+```
+q = []
+visited = {}
+
+1
+```
+
+Mark it as visited and enqueue its neighbors:
+
+```
+q = [2]
+visited = {1}
+```
+
+Repeat until queue is empty:
+
+```
+q = [2]
+visited = {1}
+```
+
+## Lets code up that BFT
+
+```python
+def bft(self, starting_vertex_id):
+    pass
+```
+## Lets take a small break
+After this break we will look at how we can convert the bft to dft and talk about the difference between bft and bfs
+
+## 4. What can we do with this to make a dft (Think about the Data Structure used)?
+
+```python
+def dft(self, starting_vertex_id):
+    pass
+```
+
+## Lets talk about the bfs using a path
+
+```python
+def bfs(self, starting_vertex_id, target_vertex_id):
+    pass
+```
+
+## Today's Project
+let's take a look at the project repo!
