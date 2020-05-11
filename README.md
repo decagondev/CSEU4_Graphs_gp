@@ -127,6 +127,60 @@ def dft(self, starting_vertex_id):
     pass
 ```
 
+
+```
+s = []
+visited = {}
+```
+
+push first vertex:
+
+```
+s = [1]
+visited = {}
+```
+
+pop first vertex:
+
+```
+s = []
+visited = {}
+
+1
+```
+
+Check if it's been visited (no):
+
+```
+s = []
+visited = {}
+
+1
+```
+
+Mark it as visited and push its neighbors:
+
+```
+s = [2]
+visited = {1}
+```
+
+Repeat until stack is empty:
+
+```
+s = [2]
+visited = {1}
+```
+
+pop item, and repeat process:
+
+```
+s = []
+visited = {1, 2, 4, 7, 6, 3, 5}
+
+
+```
+
 ## Lets talk about the bfs using a path
 
 ```python
