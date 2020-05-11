@@ -8,10 +8,12 @@
 
 - Terminology
     - Directed Vs Undirected
-        - A: 
-        - A: 
+        - Directed (Twitter follow) : Undirected (bi-directional) (Facebook)
+        - Undirected Edge is the same as a bi directional edge 
     
     - Cyclic Vs Acyclic
+        - cyclic follows a cycle within a graph
+        - acyclic does not follow a cycle (to the origin point)
     - Dense Vs Sparse
     - Weighted Vs Unweighted
 
@@ -31,7 +33,7 @@ class Graph:
     def add_edge(self, v1, v2):
         pass
 
-    def get neighbors(self, vertex_id):
+    def get_neighbors(self, vertex_id):
         pass
 ```
 
