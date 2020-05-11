@@ -185,8 +185,79 @@ visited = {1, 2, 4, 7, 6, 3, 5}
 
 ```python
 def bfs(self, starting_vertex_id, target_vertex_id):
+    # create an empty queue and enqueue the path to the starting vertex id
+    # create a set to store visited vertices
+    # while queueu not empty
+        # dequeue the first path
+        # grab the last vertex from the path
+        # if vertex is not in visited
+            # check if it is the target
+                # return the path to the target
+            # mark it visited
+            # add path to naighbours to back of queue
+                # copy the path
+                # append the neighbor to the back of it
+    # return none
     pass
 ```
 
+## bfs partial search
+
+
+```
+q = []
+visited = {}
+```
+
+Enqueue path to the first vertex:
+
+```
+q = [[1]]
+visited = {}
+```
+
+Dequeue first path :
+
+```
+q = []
+visited = {}
+
+[1]
+```
+
+Check if it's been visited (no):
+
+```
+q = []
+visited = {1}
+
+[1, 2]
+```
+
+Mark it as visited and enqueue its neighbors:
+
+```
+q = [[1, 2]]
+visited = {1}
+```
+
+Repeat until queue is empty:
+
+```
+q = [[1, 2, 3, 5], [1, 2, 4, 6], [1, 2, 4, 7]]
+visited = {1, 2, 3, 4}
+
+[1, 2, 4]
+4
+=> [1, 2, 4]
+```
+
+deque item, and repeat process:
+
+```
+q = []
+visited = {1, 2, 3, 4, 5, 6, 7}
+
+```
 ## Today's Project
 let's take a look at the project repo!
