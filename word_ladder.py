@@ -11,7 +11,18 @@
 - thinking about how to get all edges (???)
 
 """
-from queue import Queue
+class Queue():
+    def __init__(self):
+        self.queue = []
+    def enqueue(self, value):
+        self.queue.append(value)
+    def dequeue(self):
+        if self.size() > 0:
+            return self.queue.pop(0)
+        else:
+            return None
+    def size(self):
+        return len(self.queue)
 
 f = open('words.txt', 'r')
 words = f.read().split("\n")
@@ -32,21 +43,6 @@ def get_neighbors(word):
             if w != word and w in word_set:
                 neighbors.append(w)
     return neighbors
-
-
-class Queue():
-    def __init__(self):
-        self.queue = []
-    def enqueue(self, value):
-        self.queue.append(value)
-    def dequeue(self):
-        if self.size() > 0:
-            return self.queue.pop(0)
-        else:
-            return None
-    def size(self):
-        return len(self.queue)
-
 
 
 def find_word_ladder(begin_word, end_word):

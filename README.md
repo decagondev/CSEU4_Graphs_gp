@@ -352,3 +352,36 @@ Remember to do what you can to first understand the problem:
 - what parts of the problem description could be thought of as a node / vertex?
 - what parts could be an edge?
 - does this lend itself toward using a path?
+
+
+### Example run of get neighbors
+
+```python
+word = "sail"
+
+def get_neighbors(word):
+    neighbors = []
+    string_word = list(word)
+    for i in range(len(string_word)):
+        for letter in ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']:
+            temp_word = list(string_word)
+            temp_word[i] = letter
+            w = "".join(temp_word)
+            if w != word and w in word_set:
+                neighbors.append(w)
+    return neighbors
+
+    string_word = ['s', 'a', 'i', 'l']
+
+    i = 0
+    letter = 'b'
+    temp_word = ['s', 'a', 'i', 'l']
+    temp_word[i] = letter
+    ['b', 'a', 'i', 'l']
+    w = "".join(['b', 'a', 'i', 'l'])
+    w = "bail"
+
+    if "sail" not equal to "bail" and in the word_set:
+
+  
+    ["sail", "bail", "boil", "boll", ]
