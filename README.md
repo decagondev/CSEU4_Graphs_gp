@@ -285,6 +285,22 @@ def bfs(self, starting_vertex_id, target_vertex_id):
                 # append the neighbor to the back of it
     # return none
     pass
+
+def dfs(self, starting_vertex_id, target_vertex_id):
+    # create an empty stack and push the path to the starting vertex id
+    # create a set to store visited vertices
+    # while stack not empty
+        # pop the first path
+        # grab the last vertex from the path
+        # if vertex is not in visited
+            # check if it is the target
+                # return the path to the target
+            # mark it visited
+            # add path to naighbours to the top of stack
+                # copy the path
+                # append the neighbor to the back of it
+    # return none
+    pass
 ```
 
 We will be turning this in to code then refactoring it to be a `dfs` *just by changing the data structure we use to store the paths*

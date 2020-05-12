@@ -60,19 +60,60 @@ class Graph:
     
     def bfs(self, starting_vertex_id, target_vertex_id):
         # create an empty queue and enqueue the path to the starting vertex id
+        q = Queue()
+        q.enqueue([starting_vertex_id])
         # create a set to store visited vertices
-        # while queueu not empty
+        visited = set()
+        # while queue not empty
+        while q.size() > 0:
             # dequeue the first path
+            path = q.dequeue()
             # grab the last vertex from the path
+            v = path[-1]
             # if vertex is not in visited
+            if v not in visited:
                 # check if it is the target
+                if v == target_vertex_id:
                     # return the path to the target
+                    return path
                 # mark it visited
-                # add path to naighbours to back of queue
+                visited.add(v)
+                # add `PATH TO` neighbours to back of queue
+                for next_vertex in self.get_neighbors(v)
                     # copy the path
+                    new_path = list(path)
                     # append the neighbor to the back of it
+                    new_path.append(next_vertex)
+                    q.enqueue(new_path)
         # return none
-        pass
+        return None
 
     def dfs(self, starting_vertex_id, target_vertex_id):
-        pass
+        # create an empty stack and push the path to the starting vertex id
+        s = Stack()
+        s.push([starting_vertex_id])
+        # create a set to store visited vertices
+        visited = set()
+        # while queue not empty
+        while s.size() > 0:
+            # pop the first path
+            path = s.pop()
+            # grab the last vertex from the path
+            v = path[-1]
+            # if vertex is not in visited
+            if v not in visited:
+                # check if it is the target
+                if v == target_vertex_id:
+                    # return the path to the target
+                    return path
+                # mark it visited
+                visited.add(v)
+                # add `PATH TO` neighbours to back of queue
+                for next_vertex in self.get_neighbors(v)
+                    # copy the path
+                    new_path = list(path)
+                    # append the neighbor to the back of it
+                    new_path.append(next_vertex)
+                    s.push(new_path)
+        # return none
+        return None
