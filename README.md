@@ -332,3 +332,7 @@ endWord = "happy"
 None
 ```
 
+Remember to do what you can to first understand the problem:
+- what parts of the problem description could be thought of as a node / vertex?
+- what parts could be an edge?
+- does this lend itself toward using a path?
