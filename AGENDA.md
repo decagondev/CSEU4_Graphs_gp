@@ -25,9 +25,9 @@
 
 - Earliest Ancestor Solution
 - Breakout rooms 1: Planning approach for the island problem
-- 5 min break
 - Breakout rooms 2: Coding solution to island problem
-- 5 min break
+- 7 min break
+- quick solution for island counter
 - Randomness and social networks
 - Brief notes on project
 - Lunchtime!
