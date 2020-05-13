@@ -385,3 +385,28 @@ def get_neighbors(word):
 
   
     ["sail", "bail", "boil", "boll", ]
+
+```
+
+# Day 3: Social Graph
+
+We have two semi-new topics to cover today: One is connected components, which are closely related to DFT and BFT.
+
+* Connected Components: https://www.youtube.com/watch?v=zGW6XTkeEFU
+
+The second is randomness, or more accurately pseudorandomness. Computerized random number generation is very similar to the hashing algorithms we explored last sprint. Please look over the following documentation on randomness and shuffling:
+
+* Randomness: https://github.com/LambdaSchool/Graphs/tree/master/objectives/randomness
+
+- look at this island_counting problem
+
+
+Write a function that takes a 2D binary array and returns the number of 1 islands. An island consists of 1s that are connected to the north, south, east or west. For example:
+
+islands = [[0, 1, 0, 1, 0],
+           [1, 1, 0, 1, 1],
+           [0, 0, 1, 0, 0],
+           [1, 0, 1, 0, 0],
+           [1, 1, 0, 0, 0]]
+
+island_counter(islands) # returns 4

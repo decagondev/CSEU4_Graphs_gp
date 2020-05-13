@@ -20,3 +20,14 @@
 - Word Ladders Challenge
 - 5 Min Break
 - Conclusions and Wrap Up
+
+## Day 3
+
+- Earliest Ancestor Solution
+- Breakout rooms 1: Planning approach for the island problem
+- 5 min break
+- Breakout rooms 2: Coding solution to island problem
+- 5 min break
+- Randomness and social networks
+- Brief notes on project
+- Lunchtime!
