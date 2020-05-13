@@ -79,7 +79,7 @@ class Graph:
                 # mark it visited
                 visited.add(v)
                 # add `PATH TO` neighbours to back of queue
-                for next_vertex in self.get_neighbors(v)
+                for next_vertex in self.get_neighbors(v):
                     # copy the path
                     new_path = list(path)
                     # append the neighbor to the back of it
@@ -109,7 +109,7 @@ class Graph:
                 # mark it visited
                 visited.add(v)
                 # add `PATH TO` neighbours to back of queue
-                for next_vertex in self.get_neighbors(v)
+                for next_vertex in self.get_neighbors(v):
                     # copy the path
                     new_path = list(path)
                     # append the neighbor to the back of it
