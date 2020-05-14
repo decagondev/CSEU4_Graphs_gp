@@ -1,3 +1,5 @@
+import random
+
 def populate_graph(self, num_users, avg_friendships):
         """
         Takes a number of users and an average number of friendships
