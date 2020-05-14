@@ -1,4 +1,5 @@
 import random
+from queue import Queue
 
 class User:
     def __init__(self, name):
@@ -74,14 +75,35 @@ class SocialGraph:
         extended network with the shortest friendship path between them.
         The key is the friend's ID and the value is the path.
         """
+
+        q = Queue()
         visited = {}  # Note that this is a dictionary, not a set
         # !!!! IMPLEMENT ME
+        q.enqueue([user_id])
+
+        while q.size() > 0:
+            path = q.dequeue()
+
+            v = path[-1]
+
+            if v not in visited:
+                visited[v] = path
+
+                for neighbor in self.friendships[v]:
+                    path_copy = list(path) # path.copy()
+                    path_copy.append(neighbor)
+                    q.enqueue(path_copy)
         return visited
 
 
 if __name__ == '__main__':
     sg = SocialGraph()
-    sg.populate_graph(10, 2)
-    print(sg.friendships)
+    sg.populate_graph(1000, 5)
     connections = sg.get_all_social_paths(1)
-    print(connections)
+    # print(sg.friendships)
+    print(f"Users in extended social network: {len(connections) - 1}")
+    total_sp = 0
+    for user_id in connections:
+        total_sp += len(connections[user_id])
+    
+    print(f"Avg len of social path: {total_sp // len(connections)}")
